@@ -149,6 +149,13 @@ void * popCurrent(List * list) {
     else{
         list->head=nodetopop->next;
     }
+    if(nodetopop->next !=NULL){
+        nodetopop->next->prev=nodetopop->prev;
+    }
+    else{
+        list->tail=nodetopop->prev;
+    }
+    
     list->current=nodetopop->next;
     free(nodetopop);
     return savedData;
