@@ -75,3 +75,9 @@ list.c:125:25: error: incompatible types when assigning to type ‘Node *’ fro
   125 |     list->current->next=nodo;
       |                         ^~~~
 b0d93d5
+Mon Aug 24 01:45:09 AM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  11|1
+total_score: 50/60
+6f3cba5
